@@ -38,10 +38,12 @@ with title_expander:
     st.session_state.num_of_words = st.slider('Number of Words', min_value=100, max_value=1000, step=50)
     if 'keywords' not in st.session_state:
         st.session_state.keywords = []
-    keyword_input = st.text_input("Enter a keyword: ")
+    if 'keyword_input' not in st.session_state:
+        st.session_state.keyword_input = ""
+    st.session_state.keyword_input = st.text_input("Enter a keyword: ")
     keyword_button = st.button("Add keyword")
     if keyword_button:
-        st.session_state.keywords.append(keyword_input)
+        st.session_state.keywords.append(st.session_state.keyword_input)
         st.session_state.keyword_input = ""
         for keyword in st.session_state.keywords:
             st.write(f"<div style='display: inline-block; background-color: green; color: white; padding: 10px; margin: 5px; border: none; border-radius: 10px;'>{keyword}</div>", unsafe_allow_html=True)
