@@ -7,7 +7,7 @@
 ![Competitive Ads Analysis App Image](./images/ai-blog-assistant-ui.png)
 
 ## DEMO
-- You can check the live demo [here]()
+- You can check the live demo [here](https://8505-01j0bv4h1g771v2shtqjfpr66t.cloudspaces.litng.ai/)
 
 ## Libraries Used
  - streamlit
