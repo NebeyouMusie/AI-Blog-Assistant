@@ -1,5 +1,6 @@
 streamlit
 langchain
+python-dotenv
 langchain_community
 langchain_huggingface
 langchain_groq
