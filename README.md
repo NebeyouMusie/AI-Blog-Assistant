@@ -1,4 +1,4 @@
-# AI-Blog-Assistant
+# AI Blog Assistant
 
 ## Description
 - In this project I've built a streamlit web app that leverages the LLAMA3.1 LLM to create an AI-powered blog content. 
