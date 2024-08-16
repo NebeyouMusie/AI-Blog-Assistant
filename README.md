@@ -16,7 +16,6 @@
  - langchain_huggingface
  - langchain_groq
 
-
 ## Installation
  1. Prerequisites
     - Git
