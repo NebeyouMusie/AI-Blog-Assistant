@@ -14,20 +14,28 @@ st.subheader("Title Generation")
 topic_expander = st.expander("Input the topic and target audience")
 
 with topic_expander:
-    topic_name = st.text_input("Topic", key="topic_name")
-    target_audience = st.text_input("Target Audience", key="target_audience")
+    if 'topic_name' not in st.session_state:
+        st.session_state.topic_name = ""
+    st.session_state.topic_name = st.text_input("Topic")
+    if 'target_audience' not in st.session_state:
+        st.session_state.target_audience = ""
+    st.session_state.target_audience = st.text_input("Target Audience")
     submit_btn = st.button("Submit")
 
 if submit_btn: # Handle button click (submit_topic)
-    title_suggestion_str = title_suggestion_chain.invoke({'topic': topic_name, 'target': target_audience})
+    title_suggestion_str = title_suggestion_chain.invoke({'topic': st.session_state.topic_name, 'target': st.session_state.target_audience})
     st.text(title_suggestion_str)
     
 st.subheader('Blog Generation') # Display a subheader for the blog generation section
 title_expander = st.expander("Input Blog Details") # Create an expander for title input
 
 with title_expander:
-    title_of_the_blog = st.text_input("Title", key="title_of_the_blog")
-    num_of_words = st.number_input("Number of words", min_value=100, max_value=1000, step=50)
+    if 'title_of_the_blog' not in st.session_state:
+        st.session_state.title_of_the_blog = ""
+    st.session_state.title_of_the_blog = st.text_input("Title")
+    if 'num_of_words' not in st.session_state:
+        st.session_state.num_of_words = ""
+    st.session_state.num_of_words = st.number_input("Number of words", min_value=100, max_value=1000, step=50)
     if 'keywords' not in st.session_state:
         st.session_state.keywords = []
     keyword_input = st.text_input("Enter a keyword: ")
@@ -46,6 +54,6 @@ if submit_title:
         if len(i) > 0:
             formatted_keywords.append(i.lstrip('0123456789 : ').strip('"').strip("'"))
     formatted_keywords = ', '.join(formatted_keywords)
-    st.subheader(title_of_the_blog)
-    generated_blog_content = title_chain.invoke({'title': title_of_the_blog, 'target': target_audience, 'keywords': formatted_keywords, 'blog_length': num_of_words})
+    st.subheader(st.session_state.title_of_the_blog)
+    generated_blog_content = title_chain.invoke({'title': st.session_state.title_of_the_blog, 'target': st.session_state.target_audience, 'keywords': formatted_keywords, 'blog_length': st.session_state.num_of_words})
     st.write(generated_blog_content)
