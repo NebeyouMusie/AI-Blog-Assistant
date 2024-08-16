@@ -32,11 +32,11 @@
  8. open the link displayed in the terminal on your preferred browser
 
  ## Usage
- ### Title Generation
+ #### a. Title Generation
  - Enter a topic and target audience in the "Input the topic" expander.
  - Click the "Submit the topic" button to generate a list of potential titles.
 
- ### Blog Generation
+ #### b. Blog Generation
  - Enter the desired blog title in the "Input Blog details" expander.
  - Set the desired word length using the number input.
  - Add keywords by entering them in the input field and clicking "Add Keyword".
