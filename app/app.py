@@ -26,7 +26,7 @@ st.subheader('Blog Generation') # Display a subheader for the blog generation se
 title_expander = st.expander("Input the title") # Create an expander for title input
 
 with title_expander:
-    title_of_the_blog = st.text_input("", key="title_of_the_blog")
+    title_of_the_blog = st.text_input("Title", key="title_of_the_blog")
     num_of_words = st.number_input("Number of words", min_value=100, max_value=1000, step=50)
     if 'keywords' not in st.session_state:
         st.session_state.keywords = []
@@ -36,7 +36,7 @@ with title_expander:
         st.session_state.keywords.append(keyword_input)
         st.session_state.keyword_input = ""
         for keyword in st.session_state.keywords:
-            st.write(f"<div style='display: inline-block; background-color: green; padding: 10px; margin: 5px; border: none; border-radius: 10px;'>{keyword}</div>", unsafe_allow_html=True)
+            st.write(f"<div style='display: inline-block; background-color: green; color: white; padding: 10px; margin: 5px; border: none; border-radius: 10px;'>{keyword}</div>", unsafe_allow_html=True)
             
     submit_title = st.button("Submit Info")
     
