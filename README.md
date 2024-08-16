@@ -31,6 +31,17 @@
  7. run `streamlit run app/app.py`
  8. open the link displayed in the terminal on your preferred browser
 
+ ## Usage
+ ### Title Generation
+ - Enter a topic and target audience in the "Input the topic" expander.
+ - Click the "Submit the topic" button to generate a list of potential titles.
+
+ ### Blog Generation
+ - Enter the desired blog title in the "Input Blog details" expander.
+ - Set the desired word length using the number input.
+ - Add keywords by entering them in the input field and clicking "Add Keyword".
+ - Click the "Submit the Info" button to generate the blog content.
+
 ## Collaboration
 - Collaborations are welcomed ❤️
 
