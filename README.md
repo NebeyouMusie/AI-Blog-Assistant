@@ -1,7 +1,7 @@
 # AI-Blog-Assistant
 
 ## Description
-- In this project I've built a streamlit web app that leverages the LLAMA3.1 LLM to create an AI-powered blog content assistant. 
+- In this project I've built a streamlit web app that leverages the LLAMA3.1 LLM to create an AI-powered blog content. 
 - The tool assists users in generating blog titles and content based on provided inputs.
 
 ![Competitive Ads Analysis App Image](./images/ai-blog-assistant-ui.png)
