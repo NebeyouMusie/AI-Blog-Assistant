@@ -37,7 +37,7 @@
  - Click the "Submit the topic" button to generate a list of potential titles.
 
  #### b. Blog Generation
- - Enter the desired blog title in the "Input Blog details" expander.
+ - Enter the desired blog title in the "Input Blog Details" expander.
  - Set the desired word length using the number input.
  - Add keywords by entering them in the input field and clicking "Add Keyword".
  - Click the "Submit the Info" button to generate the blog content.
