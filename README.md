@@ -31,7 +31,7 @@
 - Collaborations are welcomed ❤️
 
 ## Acknowledgments
- - I would like to thank [Sunny Savita](https://www.youtube.com/@sunnysavita10)
+ - I would like to thank [UNLEASHING TOMORROW'S {TECH}](https://www.youtube.com/@UNLEASHINGTOMORROWSTECH)
    
 ## Contact
  - LinkedIn: [Nebeyou Musie](https://www.linkedin.com/in/nebeyou-musie)
