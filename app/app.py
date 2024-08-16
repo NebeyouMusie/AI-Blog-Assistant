@@ -35,7 +35,7 @@ with title_expander:
     st.session_state.title_of_the_blog = st.text_input("Title")
     if 'num_of_words' not in st.session_state:
         st.session_state.num_of_words = ""
-    st.session_state.num_of_words = st.number_input("Number of words", min_value=100, max_value=1000, step=50)
+    st.session_state.num_of_words = st.slider('Number of Words', min_value=100, max_value=1000, step=50)
     if 'keywords' not in st.session_state:
         st.session_state.keywords = []
     keyword_input = st.text_input("Enter a keyword: ")
