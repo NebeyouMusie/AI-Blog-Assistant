@@ -23,7 +23,7 @@ if submit_btn: # Handle button click (submit_topic)
     st.text(title_suggestion_str)
     
 st.subheader('Blog Generation') # Display a subheader for the blog generation section
-title_expander = st.expander("Input the title") # Create an expander for title input
+title_expander = st.expander("Input Blog Details") # Create an expander for title input
 
 with title_expander:
     title_of_the_blog = st.text_input("Title", key="title_of_the_blog")
