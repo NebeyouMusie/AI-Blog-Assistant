@@ -38,7 +38,7 @@ with title_expander:
         for keyword in st.session_state.keywords:
             st.write(f"<div style='display: inline-block; background-color: green; color: white; padding: 10px; margin: 5px; border: none; border-radius: 10px;'>{keyword}</div>", unsafe_allow_html=True)
             
-    submit_title = st.button("Submit Info")
+    submit_title = st.button("Submit the Info")
     
 if submit_title:
     formatted_keywords = []
