@@ -57,5 +57,6 @@ if submit_title:
             formatted_keywords.append(i.lstrip('0123456789 : ').strip('"').strip("'"))
     formatted_keywords = ', '.join(formatted_keywords)
     st.subheader(st.session_state.title_of_the_blog)
-    generated_blog_content = title_chain.invoke({'title': st.session_state.title_of_the_blog, 'target': st.session_state.target_audience, 'keywords': formatted_keywords, 'blog_length': st.session_state.num_of_words})
-    st.write(generated_blog_content)
+    with st.spinner("Generating your blog..."):
+        generated_blog_content = title_chain.invoke({'title': st.session_state.title_of_the_blog, 'target': st.session_state.target_audience, 'keywords': formatted_keywords, 'blog_length': st.session_state.num_of_words})
+        st.write(generated_blog_content)
