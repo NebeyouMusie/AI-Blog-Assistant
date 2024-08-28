@@ -17,7 +17,7 @@
  - langchain_huggingface
  - langchain_groq
 
-## Installation
+## Installations
  1. Prerequisites
     - Git
     - Command line familiarity
